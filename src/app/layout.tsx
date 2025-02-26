@@ -43,7 +43,10 @@ export default function RootLayout({
     measurementId: "G-8HLJYE7JDT",
   };
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+
+  const analytics =
+    app.name && typeof window !== "undefined" ? getAnalytics(app) : null;
+
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>{children}</body>
