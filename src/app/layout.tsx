@@ -34,7 +34,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${poppins.className} antialiased`}>{children}
+      
+      <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDT8ynIROJl3AnZ_TQii-wN48QGkEcgGdc",
+    authDomain: "contact-form-portfolio-20552.firebaseapp.com",
+    projectId: "contact-form-portfolio-20552",
+    storageBucket: "contact-form-portfolio-20552.firebasestorage.app",
+    messagingSenderId: "768901717572",
+    appId: "1:768901717572:web:73bc35d1e00e4077e3e611",
+    measurementId: "G-8HLJYE7JDT"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+      
+      </body>
     </html>
   );
 }
