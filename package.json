@@ -10,7 +10,7 @@
     "deploy": "npm run build && touch out/.nojekyll"
   },
   "dependencies": {
-    "firebase": "^10.13.1",
+    "firebase": "^10.14.1",
     "gsap": "^3.12.5",
     "next": "14.2.11",
     "react": "^18",
