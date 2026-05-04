@@ -39,7 +39,7 @@ const Footer: React.FC<Props> = () => {
       <div className="flex items-center gap-6">
         <div className="text-secondary">
           <a
-            href="https://drive.google.com/file/d/1rZCkw-VSL5AbYSO1vwA3NUttA9GP6bNR/view?usp=share_link"
+            href="https://drive.google.com/file/d/10bbewkKmHppJUrXWtQAa5mlam36VkybL/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
